@@ -1,21 +1,42 @@
 :root {
-    --green-1: #3ECF8E,
-    --green-2: #006239,
-    --green-3: #002918,
-    --black-0: #000000,
-    --black-2: #0F0F0F,
-    --black-3: #121212,
-    --black-4: #171717,
-    --black-5: #1F1F1F,
-    --black-6: #212121,
-    --black-7: #222222,
-    --black-8: #242424,
-    --black-9: #2E2E2E,
-    --black-10: #363636,
-    --black-11: #393939,
-    --black-12: #4D4D4D,
-    --black-13: #898989,
-    --black-14: #B4B4B4,
-    --white-0: #FFFFFF,
+    --green-1: #3ECF8E;
+    --green-2: #006239;
+    --green-3: #002918;
+    --black-0: #000000;
+    --black-2: #0F0F0F;
+    --black-3: #121212;
+    --black-4: #171717;
+    --black-5: #1F1F1F;
+    --black-6: #212121;
+    --black-7: #222222;
+    --black-8: #242424;
+    --black-9: #2E2E2E;
+    --black-10: #363636;
+    --black-11: #393939;
+    --black-12: #4D4D4D;
+    --black-13: #898989;
+    --black-14: #B4B4B4;
+    --white-0: #FFFFFF;
     --white-1: #FAFAFA
+}
+
+body {
+    font-family: Circular,custom-font, Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.action-btn{
+    padding: 12px 24px;
+    border: 1px solid rgba(62, 207, 142, 0.3);
+    border-radius: 8px;
+    font-size: medium;
+    background-color: #3ecf8e4d;
+    color: rgb(250, 250, 250);
+    cursor: pointer;
+}
+
+.action-btn:hover{
+    border: 1px solid rgb(62, 207, 142);
+    background-color: rgba(62, 207, 142, 0.5);
 }

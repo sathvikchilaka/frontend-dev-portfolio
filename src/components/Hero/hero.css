@@ -1,0 +1,41 @@
+.hero{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 11rem 8rem;
+    margin: 0 7rem;
+    padding-bottom: 8rem;
+}
+
+.main-section{
+    margin: 0 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.intro-text{
+    margin: 0;
+    width: fit-content;
+    font-size: 52px;
+    font-weight: 400;
+}
+
+.intro-heading{
+    margin: 0;
+    width: fit-content;
+    color: var(--green-1);
+    font-size: 76px;
+    font-weight: 500;
+}
+
+.intro{
+    max-width: 76%;
+    text-align: center;
+    margin: 1.5rem 4rem;
+    font-size: 18px;
+}

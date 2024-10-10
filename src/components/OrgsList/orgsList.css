@@ -1,0 +1,86 @@
+.orgs-container {
+  display: flex;
+  max-width: 76%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.orgs-footer-text {
+    color: var(--white-1);
+    margin: 0;
+    margin-top: 1.5rem;
+    opacity: .4;
+    font-size: medium;
+}
+
+/* Carousel wrapper for overflow handling and gradient effect */
+.carousel-wrapper {
+  position: relative;
+  width: 86%; /* Full width container */
+  overflow: hidden; /* Hide overflowing logos */
+  padding: 20px;
+}
+
+/* Scrolling container */
+.orgs-list {
+    opacity: .3;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  animation: scroll 24s linear infinite; /* Longer duration for smooth circular scrolling */
+}
+
+/* Logos styling */
+.org-logo {
+  object-fit: contain;
+  height: 2rem;
+  margin-right: 3rem; /* Spacing between logos */
+}
+
+/* Gradient effect on left and right */
+.carousel-wrapper::before,
+.carousel-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px; /* Adjust this for the width of the gradient */
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Left-side gradient */
+.carousel-wrapper::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(18, 18, 18, 1),
+    rgba(18, 18, 18, 0)
+  );
+}
+
+/* Right-side gradient */
+.carousel-wrapper::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(18, 18, 18, 1),
+    rgba(18, 18, 18, 0)
+  );
+}
+
+/* Scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at the original position */
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Move to halfway through the duplicate logos */
+  }
+}
